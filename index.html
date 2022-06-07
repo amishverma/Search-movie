@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="MovieDb is a database of movies, TV shows, and Persons that use Title, Year, Genre and IMDbID as identifiers. Contains information extracted from the Internet." />
+    <meta name="description"
+        content="Find the exact information you need about your favorite movies and tv series. You can search for a movie using a lot of ways, or follow all the information about that movie in just one page.">
+    <!-- Css files -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- font-awesomse cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Javascript files -->
+    <script defer src="app.js"></script>
+    <title>MovieDB</title>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <!-- Logo  -->
+        <div class="logo">
+            <div class="container">
+                <h1 class="logo__heading">Movie<span class="logo__heading--color">DB</span></h1>
+            </div>
+        </div>
+        <!-- end of logo -->
+
+        <!-- Search Conatiner -->
+        <div class="search-container">
+            <div class="search-element">
+                <h2>Search Movie</h2>
+                <input type="text" class="form-control" placeholder="Search Movie Title...." id="movie-search-box"
+                    onkeyup="Debouncing()" onclick="Debouncing()">
+                <div class="search-list" id="search-list">
+                    <!-- List items -->
+                    <!-- <div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                            <img src="medium-cover.jpg" alt="">
+                        </div>
+
+                        <div class="search-item-info">
+                            <h3>Gaurdains of Galaxy volume 2</h3>
+                            <p>2017</p>
+                        </div>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+        <!-- End of searh Conatiner  -->
+
+        <!-- Reuslt container -->
+
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                    <!-- Movie information -->
+                    <!-- <div class="movie-poster">
+                        <img src="medium-cover.jpg" alt="movie-poster" class="movie-poster-image">
+                    </div>
+
+                    <div class="movie-info">
+                        <h3 class="movie-title">Gaurdains Of Galaxy</h3>
+                        <ul class="movie-misc-info">
+                            <li class="movie-year"> Year:2017</li>
+                            <li class="movie-rated"> Ratings:PG-13</li>
+                            <li class="movie-released">Released:05May 2017</li>
+                        </ul>
+                        <p class="genre"><b> Genre: </b>Action ,Adventure, Comedy </p>
+                        <p class="writer"><b> Wrtier:</b>Stan lee </p>
+                        <p class="actors"><b>Actors:</b> CRHIS Pratt</p>
+                        <p class="plot"><b>Plot:</b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                            cupiditate.</p>
+
+                        <p class="language"><b>language:</b>English</p>
+                        <p class="awards"><b><i class="fas fa-award"></i></b>Oscar</p>
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- End of Reuslt container -->
+    </div>
+</body>
+
+</html>
